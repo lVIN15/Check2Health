@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "doctor")
-public class Doctor {
+public class DoctorEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "doctor_id")
@@ -27,7 +27,7 @@ public class Doctor {
 
 	private String email;
 
-	public Doctor() {}
+	public DoctorEntity() {}
 
 	public Long getDoctorID() { return doctorID; }
 	public void setDoctorID(Long doctorID) { this.doctorID = doctorID; }

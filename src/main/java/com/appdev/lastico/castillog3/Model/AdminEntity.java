@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "admin")
-public class Admin {
+public class AdminEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "admin_id")
@@ -30,7 +30,7 @@ public class Admin {
 
 	private String password;
 
-	public Admin() {}
+	public AdminEntity() {}
 
 	public Long getAdminID() { return adminID; }
 	public void setAdminID(Long adminID) { this.adminID = adminID; }

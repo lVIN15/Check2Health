@@ -11,7 +11,7 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "patient")
-public class Patient {
+public class PatientEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "patient_id")
@@ -46,7 +46,7 @@ public class Patient {
 
 	private String phoneNumber;
 
-	public Patient() {}
+	public PatientEntity() {}
 
 	public Long getPatientID() { return patientID; }
 	public void setPatientID(Long patientID) { this.patientID = patientID; }

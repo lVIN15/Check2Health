@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "reservation")
-public class Reservation {
+public class ReservationEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "reservation_id")
@@ -23,7 +23,7 @@ public class Reservation {
 
 	private String reasonForVisit;
 
-	public Reservation() {}
+	public ReservationEntity() {}
 
 	public Long getReservationID() { return reservationID; }
 	public void setReservationID(Long reservationID) { this.reservationID = reservationID; }

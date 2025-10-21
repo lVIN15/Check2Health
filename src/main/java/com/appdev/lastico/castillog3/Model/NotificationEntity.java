@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "notification")
-public class Notification {
+public class NotificationEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "notification_id")
@@ -17,7 +17,7 @@ public class Notification {
 
 	private String message;
 
-	public Notification() {}
+	public NotificationEntity() {}
 
 	public Long getNotificationID() { return notificationID; }
 	public void setNotificationID(Long notificationID) { this.notificationID = notificationID; }

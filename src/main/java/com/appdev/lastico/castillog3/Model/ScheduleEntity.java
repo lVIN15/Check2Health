@@ -11,7 +11,7 @@ import java.time.LocalTime;
 
 @Entity
 @Table(name = "schedule")
-public class Schedule {
+public class ScheduleEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "schedule_id")
@@ -23,7 +23,7 @@ public class Schedule {
 
 	private LocalTime endTime;
 
-	public Schedule() {}
+	public ScheduleEntity() {}
 
 	public Long getScheduleID() { return scheduleID; }
 	public void setScheduleID(Long scheduleID) { this.scheduleID = scheduleID; }
