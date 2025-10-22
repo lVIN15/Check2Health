@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.appdev.lastico</groupId>
-	<artifactId>castillog3</artifactId>
+	<artifactId>lagamog3</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>castillog3</name>
+	<name>lagamog3</name>
 	<description>Project that allows patients to reserve and tell symptoms before consulting with a doctor.</description>
 	<url/>
 	<licenses>
