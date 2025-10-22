@@ -8,12 +8,12 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "admin")
-public class AdminEntity {
+@Table(name = "staff")
+public class StaffEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "admin_id")
-	private Long adminID;
+	@Column(name = "staff_id")
+	private Long staffID;
 
 	@Column(nullable = false)
 	private String firstName;
@@ -30,10 +30,10 @@ public class AdminEntity {
 
 	private String password;
 
-	public AdminEntity() {}
+	public StaffEntity() {}
 
-	public Long getAdminID() { return adminID; }
-	public void setAdminID(Long adminID) { this.adminID = adminID; }
+	public Long getStaffID() { return staffID; }
+	public void setStaffID(Long staffID) { this.staffID = staffID; }
 	public String getFirstName() { return firstName; }
 	public void setFirstName(String firstName) { this.firstName = firstName; }
 	public String getLastName() { return lastName; }
